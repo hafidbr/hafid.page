@@ -1,0 +1,114 @@
+{
+    // Use IntelliSense para saber los atributos posibles.
+    // Mantenga el puntero para ver las descripciones de los existentes atributos.
+    // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "args": [
+                "--extensionDevelopmentPath=${workspaceFolder}"
+            ],
+            "name": "Extensión de inicio",
+            "outFiles": [
+                "${workspaceFolder}/out/**/*.js"
+            ],
+            "preLaunchTask": "npm",
+            "request": "launch",
+            "type": "extensionHost"
+        },
+        {
+            "name": "Python: Archivo actual",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python: Módulo actual",
+            "type": "python",
+            "request": "launch",
+            "module": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python: Archivo actual (Externo)",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "externalTerminal"
+        },
+        {
+            "name": "Python: Módulo actual (Externo)",
+            "type": "python",
+            "request": "launch",
+            "module": "${file}",
+            "console": "externalTerminal"
+        },
+        {
+            "name": "Python: Módulo actual (depuración interna)",
+            "type": "python",
+            "request": "launch",
+            "module": "${file}",
+            "console": "integratedTerminal",
+            "env": {
+                "name": "value"
+            }
+        },
+        {
+            "name": "Python: Módulo actual (depuración externa)",
+            "type": "python",
+            "request": "launch",
+            "module": "${file}",
+            "console": "externalTerminal",
+            "env": {
+                "name": "value"
+            }
+        },
+        {
+            "name": "Python: Módulo actual (depuración interna) (Windows)",
+            "type": "python",
+            "request": "launch",
+            "module": "${file}",
+            "console": "integratedTerminal",
+            "env": {
+                "name": "value"
+            }
+        },
+        {
+            "name": "Python: Módulo actual (depuración externa) (Windows)",
+            "type": "python",
+            "request": "launch",
+            "module": "${file}",
+            "console": "externalTerminal",
+            "env": {
+                "name": "value"
+            }
+        },
+        {
+            "name": "Python: Módulo actual (depuración interna) (Linux)",
+            "type": "python",
+            "request": "launch",
+            "module": "${file
+        {
+            "name": "Attach to Chrome",
+            "port": 9222,
+            "request": "attach",
+            "type": "chrome",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Depurador de Python: Archivo actual",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Iniciar Chrome para localhost",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        }
+    ]
+}
